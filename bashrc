@@ -2,3 +2,4 @@ PS1='\[\033[01;36m\]Mi-Max3\[\033[01;34m\]:\[\033[01;32m\]\w\[\033[00m\]\n\[\033
 
 alias ll='ls -lh --color=auto'
 alias la='ls -lha --color=auto'
+alias ta='tmux attach'
