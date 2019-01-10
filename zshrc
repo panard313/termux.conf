@@ -14,6 +14,11 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 #auto complication fish style color
 source /data/data/com.termux/files/home/obj/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+#color of ls, need install coreutils
+if [ -f $HOME/obj/panard-configs/lscolor-256color ]; then
+    eval $(dircolors -b $HOME/obj/panard-configs/lscolor-256color)
+fi
+
 alias ll='ls -lh --color=auto'
 alias la='ls -lha --color=auto'
 alias ta='tmux attach'
